@@ -9,8 +9,41 @@ if ( hoot_page_header_attop() ) {
 
 <div class="grid">
 
-	<div class="grid-row">
-
+	<div class="grid-row" id='main-place'>
+		<div id='info-sidebar'>
+Services:
+<br>
+Residential Door Refinishing & Finishing
+<br>
+Commercial Door Finishing & Refinishing
+<br>
+Antiquing & Distressing Wood Doors
+<br>
+Custom Wood & Fiberglass Door Staining
+<br>
+Vigas, window frames, and baseboards
+<br>
+Licensed, Bonded and Insured
+<br><br>
+______________________
+<br>
+Contact Us:
+<br>
+480-272-7074
+<br>
+drdoor@cox.net
+<br>
+Serving Phoenix and Tucson Arizona and surrounding communities
+<br><br>
+____________________
+<br>
+Office Hours:
+<br>
+Monday - Friday
+8:30am - 4:30pm
+<br>
+Follow Us!
+		</div>
 		<main <?php hoot_attr( 'content' ); ?>>
 
 			<?php
@@ -56,7 +89,7 @@ if ( hoot_page_header_attop() ) {
 
 		</main><!-- #content -->
 
-		<?php hoot_get_sidebar( 'primary' ); // Loads the template-parts/sidebar-primary.php template. ?>
+		<!-- <?php hoot_get_sidebar( 'primary' ); // Loads the template-parts/sidebar-primary.php template. ?>
 
 	</div><!-- .grid-row -->
 

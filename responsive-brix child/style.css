@@ -255,7 +255,8 @@ th {
   min-width: 320px;
 }
 .grid-row {
-  margin: 0 10px;
+  /* -eric- remove margin 
+  margin: 0 10px; */
 }
 .grid,
 .grid-stretch,
@@ -285,7 +286,8 @@ th {
 }
 [class*="grid-span-"],
 [class*="column-"] {
-  padding: 0 30px;
+  padding: 0;
+  /*eric - padding was 0 30px;*/
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -374,7 +376,7 @@ th {
 /************* Responsive Grid *************/
 @media only screen and (max-width: 1023px) {
   .grid-row {
-    margin: 0 10px;
+    margin: 0;
   }
   [class*="grid-span-"],
   [class*="column-"] {
@@ -1297,6 +1299,13 @@ img.img-noborder {
   -moz-box-shadow: none !important;
   box-shadow: none !important;
 }
+
+/* -eric- */
+.nav-buttons img {
+  width: 140.5px;
+}
+
+
 /************* WP editor image sizes ($content_width classes) *************/
 /************* Wordpress Gallery (Overwrite WP's inline Gallery CSS) *************/
 .gallery {
@@ -1514,6 +1523,66 @@ body {
  /* background: #ffffff; */
  /*background: url(images/desertrosedoorbanner.jpg);*/
 }
+
+/***NAV Bar -Eric***/
+
+#nav-container {
+  display: inline-block;
+  margin-left: 185px;
+  width: 843px;
+  /*min-width: 825px;*/
+  border-style: solid;
+  border-color: black;
+  text-align: center;
+}
+
+.nav-border {
+  float: left;
+  display: inline-block;
+}
+
+.nav-buttons {
+  vertical-align: top;
+  display: inline-block;
+ /* width: 16.2%; */
+}
+
+/** Hover States **/
+
+
+#nav-home:hover {
+  content:url(./images/lightHome.jpg);
+  width: 140.5px;
+}
+#nav-doors:hover {
+  content:url(./images/lightDoors.jpg);
+  width: 140.5px;
+}
+#nav-care:hover {
+  content:url(./images/lightCare.jpg);
+  width: 140.5px;
+}
+#nav-resources:hover {
+  content:url(./images/lightResources.jpg);
+  width: 140.5px;
+}
+#nav-contact:hover {
+  content:url(./images/lightContact.jpg);
+  width: 140.5px;
+}
+#nav-blog:hover {
+  content:url(./images/lightBlog.jpg);
+  width: 140.5px;
+}
+
+/*** -eric- Sidebar ***/
+
+#info-sidebar {
+  float: left;
+  width: 290px;
+}
+
+
 /*** Responsive Header ***/
 @media only screen and (max-width: 799px) {
   #header:before,
@@ -1533,13 +1602,17 @@ body {
 /************* Logo *************/
 #site-logo {
   background: url(images/desertrosedoorbanner.jpg);
-  padding: 15px 23px 13px 0;
-  min-width: 825px;
-  max-width: 100%;
-  margin-left: 25%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*eric - edit margin left, add url above*/
+  /*margin-left: 35px;
+  padding: 15px 23px 13px 0; */
+  width: 825px;
+  /*max-width: 100%;*/
+  margin-left: 175px;
   display: inline-block;
   vertical-align: top;
-  height: 95px;
+  height: 125px;
 }
 /*** Text Logo ***/
 #site-title {
@@ -1868,6 +1941,17 @@ body {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+#main-place {
+  float: left;
+  width: 848.452px;
+  margin-left: 185px;
+  display: inline-block;
+}
+
+#content {
+  margin-top: 0px;
+}
 /*** Responsive Loop Meta ***/
 @media only screen and (max-width: 799px) {
   #content-wrap .loop-meta {
@@ -1912,7 +1996,11 @@ body {
 }
 /************* <main> #content *************/
 #content {
-  margin-top: 70px;
+  margin-top: 0px;
+  /*eric - next three lines my edits*/
+  float: right;
+  /*margin-left: 60px; */
+  width: 550px;
 }
 #content.no-sidebar {
   float: none;

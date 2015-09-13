@@ -28,7 +28,7 @@ wp_head();
 				<div class="grid-row">
 					<div class="table grid-span-12">
 
-						<div id="branding" class="table-cell-mid">
+					<!--	<div id="branding" class="table-cell-mid"> -->
 							<div id="site-logo" class="invert-typo">
 								<?php
 								// Display the Image Logo or Site Title
@@ -42,11 +42,19 @@ wp_head();
 							// Loads the template-parts/menu-primary.php template.
 							hoot_get_menu( 'primary' );
 							?>
-						</div>
+					<!--	</div> -->
 
 					</div>
 				</div>
+				<div id="nav-container">
+				<div class='nav-border'><div id='nav-home'class='nav-buttons'><img src="./images/darkHome.jpg"></img></div></div><div class='nav-border'><div id='nav-doors'class='nav-buttons'>
+				<img src="./images/darkDoors.jpg"></img></div></div><div class='nav-border'><div id='nav-care' class='nav-buttons'>
+				<img src="./images/darkCare.jpg"></img></div></div><div class='nav-border'><div id='nav-resources' class='nav-buttons'>
+				<img src="./images/darkResources.jpg"></img></div></div><div class='nav-border'><div id='nav-contact' class='nav-buttons'>
+				<img src="./images/darkContact.jpg"></img></div></div><div class='nav-border'><div id='nav-blog' class='nav-buttons'><img src="./images/darkBlog.jpg"></img></div>
 			</div>
+			</div>
+
 		</header><!-- #header -->
 
 		<div id="main" class="main">

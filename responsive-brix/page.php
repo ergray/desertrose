@@ -56,7 +56,7 @@ if ( hoot_page_header_attop() ) {
 
 		</main><!-- #content -->
 
-		<?php hoot_get_sidebar( 'primary' ); // Loads the template-parts/sidebar-primary.php template. ?>
+	<!--	<?php hoot_get_sidebar( 'primary' ); // Loads the template-parts/sidebar-primary.php template. ?> -->
 
 	</div><!-- .grid-row -->
 
