@@ -22,7 +22,7 @@ body {
     width: 60%
 }
 
-#contactInfo {
+#contactInfoContainer {
     background-color: #a83a0b;
     color: white;
     width: 25%;
@@ -30,9 +30,15 @@ body {
     margin: auto;
     border-radius: 200px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;  
+}
+
+#contactInfo {
+    margin: auto;
+    height: 80%;
+    width: 70%
 }
 
 #menuContainer {
