@@ -6,22 +6,31 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: auto;
     height: 100%;
-    width: 100%
+    max-width: 100%
 }
 
 
 #titleBar {
-    height: 20%;
+    background-color: white;
+    height: 50px;
     display: flex;
+    position: fixed;
+    flex-grow: 1 0 auto;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     width: 100%
+}
+
+#titleSpacer {
+    height: 50px;
 }
 
 #logoHeader {
     height: 100%;
-    width: 60%
+    width: 200px
 }
 
 #contactInfoContainer {
@@ -53,6 +62,14 @@ body {
     max-width: 50%
 }
 
+#topMenu {
+    padding: 0 10px;
+}
+
+#topMenu a {
+    padding: 0 10px;
+}
+
 #menuContainer {
     width: 100%;
     background-color: #a83a0b;
@@ -69,28 +86,56 @@ body {
     align-items: center
 }
 
-#bannerContainer {
+/*#bannerContainer {
     height: 20%;
     width: 100%
 }
+*/
 
 #doorBanner {
-    height: 100%;
-    width: 100%
+    max-width: 100%
 }
+
 
 #main {
     /* height: 100%; */
-    width: 100%;
+    max-width: 860px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+.frontSection {
     display: flex;
     flex-direction: row;
-    flex: 1 0 auto;
+    justify-content: space-between;
+    width: 100%
+}
+
+.shortDescription {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 200px;
+    margin-left: 15px;
+
+}
+
+.imagePlaceholder {
+    margin-right: 15px;
+    max-width: 500px;
+    background-color: black;
+    color: white
 }
 
 #companyDescription {
     width: 60%;
     padding: 0 20px
 }
+
+
 
 #ftContainer {
     width: 40%;
@@ -111,4 +156,19 @@ body {
     margin: auto;
     background-color: #a83a0b;
     width: 30%
+}
+
+#contactSection {
+    justify-content: space-between;
+    align-items: center
+}
+
+#contactSection span {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
+footer {
+    padding-top: 30px
 }
